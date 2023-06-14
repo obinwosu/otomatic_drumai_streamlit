@@ -1,9 +1,6 @@
 import streamlit as st
 from instanceSegmentation import *
-#detector = Detector(model_type='keypointsDetection')
 
-#detector.onVideo("pexels-tima-miroshnichenko-6388396.mp4")
-#@st.cache
 def func_1(x):
     detector = Detector(model_type=x)
     image_file = st.file_uploader("Upload An Image",type=['png','jpeg','jpg'])
